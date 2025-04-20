@@ -7,3 +7,13 @@ git remote set-url origin https://github.com/vedantikavitkar/sample
 git add .
 git commit -m "veda"
   git push -u origin main
+
+import joblib
+
+# Assume model is your trained model (e.g., from scikit-learn)
+joblib.dump(model, 'mlopsexam.joblib')
+
+loaded_model = joblib.load('mlopsexam.joblib')
+
+
+loaded_model
